@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Sửa Sinh Viên</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Sửa Sinh Viên</h1>
+        <form action="/edit-sinh-vien" method="post">
+            <input name="id" type="hidden" value="{{students._id}}">
+            <div class="form-group">
+                <label for="namesv">Tên sinh viên</label>
+                <input type="text" class="form-control" id="namesv" name="namesv" value="{{students.namesv}}">
+            </div>
+            <div class="form-group">
+                <label for="avatar">Ảnh đại diện</label>
+                <input type="text" class="form-control" id="avatar" name="avatar" value="{{students.avatar}}">
+            </div>
+            <div class="form-group">
+                <label for="diemtb">Năm sản xuất</label>
+                <input type="text" class="form-control" id="namsx" name="namsx" value="{{students.namsx}}">
+            </div>
+            <div class="form-group">
+                <label for="diemtb">Giá</label>
+                <input type="text" class="form-control" id="gia" name="gia" value="{{students.gia}}">
+            </div>
+            <button style="margin-top: 50px;" type="submit" class="btn btn-primary">Sửa</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

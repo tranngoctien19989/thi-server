@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Thêm Sinh Viên</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Thêm sinh viên</h1>
+        <form action="/themsinhvien/new" method="post">
+            <div>
+                <text>
+                    Name sinh viên
+                </text>
+                <input type="text" name="namesv" id="namesv" />
+            </div>
+            <div>
+                <text>
+                    Ảnh đại diện
+                </text>
+                <input type="text" name="avatar" id="avatar" />
+            </div>
+            <div>
+                <text>
+                    Năm sản xuất
+                </text>
+                <input type="number" name="namsx" id="namsx" />
+            </div>
+             <div>
+                <text>
+                    Giá bán
+                </text>
+                <input type="number" name="gia" id="gia" />
+            </div>
+    </div>
+    {{!-- <div>
+        <text>
+            Chi tiết sinh viên
+        </text>
+        <input type="text" name="title" id="title" />
+    </div> --}}
+    <button type="submit" class="btn btn-primary">Thêm Sinh Viên</button>
+    </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
